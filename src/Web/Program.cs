@@ -1,5 +1,6 @@
 using clean_keycloak_pkce.Infrastructure.Data;
 using clean_keycloak_pkce.Web.ConfigService;
+using NSwag.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,15 @@ app.UseSwaggerUi(settings =>
 {
     settings.Path = "/api";
     settings.DocumentPath = "/api/specification.json";
+    settings.ServerUrl = "https://localhost:5001";
+    settings.OAuth2Client = new OAuth2ClientSettings()
+    {
+        ClientId = builder.Configuration["Keycloak:ClientId"],
+        ClientSecret = "",
+        Realm = builder.Configuration["Keycloak:realm"],
+        UsePkceWithAuthorizationCodeGrant = true
+    };
+    
 });
 
 app.MapControllerRoute(
