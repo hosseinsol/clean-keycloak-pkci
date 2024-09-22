@@ -10,6 +10,8 @@ builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebServices();
 builder.Services.AddKeycloakConfig(builder.Configuration);
+builder.Services.AddSwaggerConfig(builder.Configuration);
+
 
 var app = builder.Build();
 
@@ -27,7 +29,7 @@ else
 app.UseHealthChecks("/health");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseOpenApi();
 app.UseSwaggerUi(settings =>
 {
     settings.Path = "/api";
