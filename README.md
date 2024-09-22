@@ -1,4 +1,15 @@
-﻿# git
+﻿# Get token
+```
+curl --location 'http://localhost:9000/auth/realms/camunda/protocol/openid-connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=password' \
+--data-urlencode 'client_id=identity_client' \
+--data-urlencode 'username=h.soleymanifar' \
+--data-urlencode 'password=hossein' \
+--data-urlencode 'client_secret=YDS6KCTW9kEIjp1EnAeZoXfA0gL6wzhY'
+```
+
+# git
 ```git config http.postBuffer 524288000```
 
 # clean_keycloak_pkce
