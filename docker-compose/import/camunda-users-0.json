@@ -1,0 +1,164 @@
+{
+  "realm" : "camunda",
+  "users" : [ {
+    "id" : "55783f38-84b6-46ed-934b-5d7d8988c99b",
+    "username" : "camunda",
+    "firstName" : "Admin",
+    "lastName" : "Camunda",
+    "email" : "camunda@accso.de",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146088767,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "8abaecc5-cb76-49f0-8ffd-d7c59010e8bf",
+      "type" : "password",
+      "createdDate" : 1686146088821,
+      "secretData" : "{\"value\":\"FTm5ignL5aPnLGbSgfsXhS5xbMiWrKxaUXa5A2JWouI=\",\"salt\":\"DXa5qr52uNORRhSRlypi5g==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/camunda-admin" ]
+  }, {
+    "id" : "21472474-4f60-4b4f-84b3-19175befdc8e",
+    "username" : "camunda-identity-service",
+    "firstName" : "Identity",
+    "lastName" : "Service",
+    "email" : "identity.service@test.de",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146089181,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/camunda-identity-service" ]
+  }, {
+    "id" : "1e15da9f-eb00-42d3-af64-4d131f9f9eaf",
+    "username" : "gunnar.von-der-beck@accso.de",
+    "firstName" : "Gunnar",
+    "lastName" : "von der Beck",
+    "email" : "gunnar.von-der-beck@accso.de",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146088921,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "clientRoles" : {
+      "camunda-identity-service" : [ "role-readonly" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ "/manager", "/teamlead" ]
+  }, {
+    "id" : "137b9480-d0a8-42a9-9f88-ad2552814beb",
+    "username" : "h.soleymanifar",
+    "firstName" : "حسین",
+    "lastName" : "سلیمانی فر",
+    "email" : "eng.hossein@gmail.com",
+    "emailVerified" : true,
+    "createdTimestamp" : 1704692258683,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "7be6fcb7-c323-4638-ab5a-b6a9ac332f17",
+      "type" : "password",
+      "createdDate" : 1704692318970,
+      "secretData" : "{\"value\":\"rll7uqVv6jFEph/2S2UZlTJrJE92VdOvJqOxZZhyByo=\",\"salt\":\"nWz+D04RwexM46q+r7/2qQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/camunda-admin" ]
+  }, {
+    "id" : "a8418ed2-f218-4d86-bb17-5d1a9b798a87",
+    "username" : "hans.mustermann",
+    "firstName" : "Hans",
+    "lastName" : "Mustermann",
+    "email" : "hans.mustermann@tradermail.info",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146088849,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "b0836495-f227-4bb9-bf8e-b9d7c968ade2",
+      "type" : "password",
+      "createdDate" : 1686146088899,
+      "secretData" : "{\"value\":\"vzsvYfK3+r45/BA4nNv35uGCFrrwfWNipIKI0BqkpiQ=\",\"salt\":\"bk3pmac+vgaOteLXakYfLw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "clientRoles" : {
+      "camunda-identity-service" : [ "role-readonly" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ "/teamlead" ]
+  }, {
+    "id" : "96f301f5-f48a-40ed-bee2-bee0b8bd0d11",
+    "username" : "johnfoo",
+    "firstName" : "John",
+    "lastName" : "Foo",
+    "email" : "johnfoo@gmail.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146089075,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "05cde3f0-503a-40bc-8587-31f1ddf627f0",
+      "type" : "password",
+      "createdDate" : 1686146089122,
+      "secretData" : "{\"value\":\"gQsiuG65aDMxui0kIzyq0SQBazVSKtu+elUPtvkdSI0=\",\"salt\":\"giznMmN6YUDOGstN9TqElQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/root/child2", "/root/child1/subchild1" ]
+  }, {
+    "id" : "71e481ae-5581-4b21-a14c-62a4586aec2d",
+    "username" : "service-account-camunda-identity-service",
+    "emailVerified" : false,
+    "createdTimestamp" : 1686146088442,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "camunda-identity-service",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "clientRoles" : {
+      "realm-management" : [ "view-users", "query-users", "query-groups", "view-clients" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "bc472f37-a6bd-411e-b55c-d77472bda4d2",
+    "username" : "service-account-identity_client",
+    "emailVerified" : false,
+    "createdTimestamp" : 1726971284662,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "identity_client",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "clientRoles" : {
+      "identity_client" : [ "uma_protection" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
